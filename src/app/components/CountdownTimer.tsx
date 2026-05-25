@@ -29,9 +29,9 @@ type Props = {
   dateEnd: string;
 };
 
-export default function CountdownTimer({ dateStart, dateEnd }: Props) {
+export default function pnpm({ dateStart, dateEnd }: Props) {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>(() =>
-    calculateTimeLeft(dateEnd)
+    calculateTimeLeft(dateEnd),
   );
   const [mounted, setMounted] = useState(false);
 
@@ -66,6 +66,9 @@ export default function CountdownTimer({ dateStart, dateEnd }: Props) {
         </p>
       ) : (
         <>
+          <p className="text-gray-500 text-sm font-medium">
+            Sistem akan kembali beroperasi dalam:
+          </p>
           <div className="grid grid-cols-4 gap-4 sm:gap-6">
             {[
               { label: "Hari", value: timeLeft.days },
@@ -85,15 +88,6 @@ export default function CountdownTimer({ dateStart, dateEnd }: Props) {
                 </span>
               </div>
             ))}
-          </div>
-
-          <div className="flex flex-col items-center gap-1 text-gray-400 text-sm">
-            <p>
-              Maintenance:{" "}
-              <span className="text-gray-600">{formatDate(dateStart)}</span>
-              {" — "}
-              <span className="text-gray-600">{formatDate(dateEnd)}</span>
-            </p>
           </div>
         </>
       )}

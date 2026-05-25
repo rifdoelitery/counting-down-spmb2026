@@ -17,7 +17,7 @@ export default function Home() {
         {/* Badge */}
         <span className="inline-flex items-center gap-2 rounded-full border border-amber-500/40 bg-amber-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-amber-600">
           <span className="h-1.5 w-1.5 rounded-full bg-amber-500 animate-pulse" />
-          Dalam Peningkatan Kapasitas
+          Dalam Pemeliharaan dan Pembaruan Aplikasi
         </span>
 
         {/* Logo / Name */}
@@ -48,12 +48,11 @@ export default function Home() {
         {/* Message */}
         <div className="flex flex-col gap-3">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-800">
-            Sistem Sedang dalam Peningkatan Kapasitas
+            Sistem Sedang Dalam Pemeliharaan dan Pembaruan Aplikasi
           </h2>
           <p className="text-gray-500 text-sm sm:text-base leading-relaxed max-w-md">
-            Kami sedang melakukan peningkatan kapasitas sistem untuk
-            mempersiapkan Seleksi Penerimaan Mahasiswa Baru 2026. Sistem akan
-            kembali beroperasi setelah masa peningkatan kapasitas berakhir.
+            Kami sedang melakukan optimalisasi dan penyempurnaan aplikasi guna
+            meningkatkan stabilitas dan kualitas layanan SPMB 2026.
           </p>
         </div>
 
