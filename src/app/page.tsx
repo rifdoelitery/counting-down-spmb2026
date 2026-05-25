@@ -46,11 +46,11 @@ export default function Home() {
         </div>
 
         {/* Message */}
-        <div className="flex flex-col gap-3">
+        <div className="flex w-full flex-col items-center justify-center gap-3 text-center">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-800">
             Sistem Sedang Dalam Pemeliharaan dan Pembaruan Aplikasi
           </h2>
-          <p className="text-gray-500 text-sm sm:text-base leading-relaxed max-w-md">
+          <p className="mx-auto max-w-md text-gray-500 text-sm sm:text-base leading-relaxed">
             Kami sedang melakukan optimalisasi dan penyempurnaan aplikasi guna
             meningkatkan stabilitas dan kualitas layanan SPMB 2026.
           </p>
