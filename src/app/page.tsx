@@ -1,9 +1,9 @@
-import Image from "next/image";
-import CountdownTimer from "./components/CountdownTimer";
+import Image from 'next/image';
+import CountdownTimer from './components/CountdownTimer';
 
 export default function Home() {
-  const dateStart = process.env.NEXT_DATE_START ?? "";
-  const dateEnd = process.env.NEXT_DATE_END ?? "";
+  const dateStart = process.env.NEXT_DATE_START ?? '';
+  const dateEnd = process.env.NEXT_DATE_END ?? '';
 
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-white px-4 py-16">
@@ -40,8 +40,8 @@ export default function Home() {
               priority
             />
           </div>
-          <h1 className="text-4xl sm:text-5xl font-black tracking-tight text-gray-900">
-            SPMB 2026
+          <h1 className="text-3xl sm:text-4xl font-black tracking-tight text-gray-900">
+            Sekolah Maung - SPMB 2026
           </h1>
         </div>
 
@@ -52,7 +52,7 @@ export default function Home() {
           </h2>
           <p className="mx-auto max-w-md text-gray-500 text-sm sm:text-base leading-relaxed">
             Kami sedang melakukan optimalisasi dan penyempurnaan aplikasi guna
-            meningkatkan stabilitas dan kualitas layanan SPMB 2026.
+            meningkatkan stabilitas dan kualitas layanan Sekolah Maung - SPMB 2026.
           </p>
         </div>
 
@@ -61,7 +61,7 @@ export default function Home() {
 
         {/* Footer */}
         <p className="text-gray-400 text-xs mt-4">
-          &copy; {new Date().getFullYear()} Sekolah Maung &mdash; SPMB 2026
+          &copy; {new Date().getFullYear()} Sekolah Maung - SPMB 2026
         </p>
       </main>
     </div>

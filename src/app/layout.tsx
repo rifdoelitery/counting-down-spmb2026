@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Maintenance-SPMB 2026",
-  description: "Sistem Seleksi Penerimaan Mahasiswa Baru 2026 Sekolah Maung sedang dalam peningkatan kapasitas.",
+  title: "Sekolah Maung - SPMB 2026",
+  description:
+    "Sistem Seleksi Penerimaan Murid Baru Sekolah Maung - SPMB 2026 sedang dalam pemeliharaan dan pembaruan aplikasi.",
 };
 
 export default function RootLayout({

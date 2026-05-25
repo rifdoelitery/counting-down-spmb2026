@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 type TimeLeft = {
   days: number;
@@ -21,7 +21,7 @@ function calculateTimeLeft(targetDate: string): TimeLeft {
 }
 
 function pad(n: number) {
-  return String(n).padStart(2, "0");
+  return String(n).padStart(2, '0');
 }
 
 type Props = {
@@ -44,10 +44,10 @@ export default function pnpm({ dateStart, dateEnd }: Props) {
   }, [dateEnd]);
 
   const formatDate = (iso: string) =>
-    new Date(iso).toLocaleDateString("id-ID", {
-      day: "numeric",
-      month: "long",
-      year: "numeric",
+    new Date(iso).toLocaleDateString('id-ID', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
     });
 
   const isFinished =
@@ -66,15 +66,15 @@ export default function pnpm({ dateStart, dateEnd }: Props) {
         </p>
       ) : (
         <>
-          <p className="text-gray-500 text-sm font-medium">
+          <p className="text-gray-500 text-sm font-bold">
             Sistem akan kembali beroperasi dalam:
           </p>
           <div className="grid grid-cols-4 gap-4 sm:gap-6">
             {[
-              { label: "Hari", value: timeLeft.days },
-              { label: "Jam", value: timeLeft.hours },
-              { label: "Menit", value: timeLeft.minutes },
-              { label: "Detik", value: timeLeft.seconds },
+              { label: 'Hari', value: timeLeft.days },
+              { label: 'Jam', value: timeLeft.hours },
+              { label: 'Menit', value: timeLeft.minutes },
+              { label: 'Detik', value: timeLeft.seconds },
             ].map(({ label, value }) => (
               <div
                 key={label}
